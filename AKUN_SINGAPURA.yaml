@@ -1,0 +1,39 @@
+proxies:
+# > Config by Goodboy X MahaVPN
+# > Join Grup tele for More Update: https://t.me/MahaVPN_Group
+# > All Format Akun Clash Silahkan Akses Link Berikut: https://github.com/GboyGud/FORMAT_AKUN_CLASH
+# > Mulai Baris Ini Kebawah Isi Dengan Akun Anda Sendiri
+# > Isi Menggunakan Akun VPN Server SINGAPORE
+
+- name: Vmess-Ws
+  server: BUGMU 
+  type: vmess
+  port: 443
+  uuid: PASSWORD
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: hostmu.mahavpn.xyz
+  network: ws
+  ws-opts:
+    path: /PATH
+    headers:
+      Host: hostmu.mahavpn.xyz
+  udp: true
+- name: Vmess-SNI
+  server: hostmu.mahavpn.xyz 
+  type: vmess
+  port: 443
+  uuid: PASSWORD
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: BUGMU
+  network: ws
+  ws-opts:
+    path: /PATH
+    headers:
+      Host: hostmu.mahavpn.xyz
+  udp: true

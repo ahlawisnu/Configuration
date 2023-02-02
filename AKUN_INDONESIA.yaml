@@ -1,0 +1,33 @@
+proxies:
+# > Config by Goodboy X MahaVPN
+# > Join Grup tele for More Update: https://t.me/MahaVPN_Group
+# > All Format Akun Clash Silahkan Akses Link Berikut: https://github.com/GboyGud/FORMAT_AKUN_CLASH
+# > Mulai Baris Ini Kebawah Isi Dengan Akun Anda Sendiri
+# > Isi Menggunakan Akun VPN Server INDONESIA
+
+- name: Trojan-Ws
+  server: BUGMU
+  port: 443
+  type: trojan
+  password: PASSWORD
+  network: ws
+  sni: hostmu.mahavpn.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /PATH
+    headers:
+        Host: hostmu.mahavpn.xyz
+- name: Trojan-SNI
+  server: hostmu.mahavpn.xyz
+  port: 443
+  type: trojan
+  password: PASSWORD
+  network: ws
+  sni: BUGMU
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /PATH
+    headers:
+        Host: hostmu.mahavpn.xyz
