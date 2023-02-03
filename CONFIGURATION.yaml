@@ -412,7 +412,7 @@ rule-providers:
     path: "./TrafficIndo.yaml"
   Rule-Adblock:
     type: http
-   url: https://raw.githubusercontent.com/ahlawisnu/Configuration/main/adblock.yaml
+    url: https://raw.githubusercontent.com/ahlawisnu/Configuration/main/adblock.yaml
     behavior: classical
     path: "./adblock.yaml"
   Rule_Speedtest:
