@@ -492,7 +492,7 @@ rule-providers:
     path: "./tv.yaml"
   Rule_TV2:
     type: http
-    url: https://raw.githubusercontent.com/ahlawisnu/Configuration/main/tv2.yam
+    url: https://raw.githubusercontent.com/ahlawisnu/Configuration/main/tv2.yaml
     behavior: domain
     path: "./tv2.yaml"
   Rule_loginml:
