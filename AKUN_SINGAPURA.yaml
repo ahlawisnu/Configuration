@@ -1,39 +1,57 @@
 proxies:
-# > Config by Goodboy X MahaVPN
-# > Join Grup tele for More Update: https://t.me/MahaVPN_Group
-# > All Format Akun Clash Silahkan Akses Link Berikut: https://github.com/GboyGud/FORMAT_AKUN_CLASH
-# > Mulai Baris Ini Kebawah Isi Dengan Akun Anda Sendiri
-# > Isi Menggunakan Akun VPN Server SINGAPORE
 
-- name: Vmess-Ws
-  server: BUGMU 
-  type: vmess
+# > Mulai Baris Ini Kebawah Isi Dengan Akun Anda Sendiri
+
+# > Isi Menggunakan Akun VPN Server LUAR NEGRI 
+
+- name: Trojan-Ws
+
+  server: BUGMU
+
   port: 443
-  uuid: PASSWORD
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: hostmu.mahavpn.xyz
+
+  type: trojan
+
+  password: PASSWORD
+
   network: ws
-  ws-opts:
-    path: /PATH
-    headers:
-      Host: hostmu.mahavpn.xyz
+
+  sni: vpn.xyz
+
+  skip-cert-verify: true
+
   udp: true
-- name: Vmess-SNI
-  server: hostmu.mahavpn.xyz 
-  type: vmess
+
+  ws-opts:
+
+    path: /PATH
+
+    headers:
+
+        Host: vpn.xyz
+
+- name: Trojan-SNI
+
+  server: vpn.xyz
+
   port: 443
-  uuid: PASSWORD
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: BUGMU
+
+  type: trojan
+
+  password: PASSWORD
+
   network: ws
-  ws-opts:
-    path: /PATH
-    headers:
-      Host: hostmu.mahavpn.xyz
+
+  sni: BUGMU
+
+  skip-cert-verify: true
+
   udp: true
+
+  ws-opts:
+
+    path: /PATH
+
+    headers:
+
+        Host: vpn.xyz
